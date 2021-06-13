@@ -19,7 +19,3 @@ RUN apt-get update && apt-get -y install \
 
 # Install MySQLi
 RUN docker-php-ext-install mysqli
-
-# Install Certbot
-RUN wget -P /bin https://dl.eff.org/certbot-auto && chmod a+x /bin/certbot-auto
-RUN yes | certbot-auto --install-only
