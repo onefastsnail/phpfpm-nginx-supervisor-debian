@@ -4,7 +4,7 @@ LABEL maintainer="Paul Stewart"
 
 # Install basic deps
 RUN apt-get update && apt-get -y install \
-    nginx supervisor gnupg git subversion zip wget
+    nginx supervisor gnupg git subversion zip wget letsencrypt
 
 # Install GD
 RUN apt-get update && apt-get -y install \
